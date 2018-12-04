@@ -1,0 +1,20 @@
+[
+This is assignement solution for network programming, assignemnt #1 
+JUST, NES-2014 class
+@copy Aiah Abudouleh, Maysam Qasem
+]
+
+This code, aims to provide basics of client server concept, where client send a file to server,
+then server count number of readable charachters and send result back to client. 
+
+to run this code:
+
+#Compile 
+$gcc client.c -o c.out
+$gcc server.c -o s.out
+
+#Run , 2000 is the port number to listen for
+$./s.out 2000
+$./c.out 127.0.0.1 2000
+
+

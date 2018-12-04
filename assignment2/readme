@@ -1,0 +1,28 @@
+[
+This is assignement solution for network programming, assignemnt #2 
+JUST, NES-2014 class
+@copy Aiah Abudouleh, Maysam Qasem
+]
+
+This code, aims to provide basics of mutli-clients and forked server concept.
+
+where clients send buffer size to be used by server.
+sernd and receive buffers size are reinitialized.
+Server able to serve multi clients on same port, since reuse address option is enabled.
+
+Client sends credit,mark,credit,mark.....
+Server claculate GPA and send result to server. 
+
+When client uses ctrl+c , it will terminate it's  connection only.
+
+to run this code:
+
+#Compile 
+$gcc client.c -o c.out
+$gcc server.c -o s.out
+
+#Run , 2000 is the port number to listen for
+$./s.out 2000
+$./c.out 127.0.0.1 2000
+
+
